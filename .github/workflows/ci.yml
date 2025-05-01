@@ -8,6 +8,7 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'bun.lock'
+  workflow_dispatch:
 
 jobs:
   build-and-release:
