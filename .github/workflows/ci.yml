@@ -1,6 +1,7 @@
 name: CI/CD Pipeline
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -8,7 +9,6 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'bun.lock'
-  workflow_dispatch:
 
 jobs:
   build-and-release:
