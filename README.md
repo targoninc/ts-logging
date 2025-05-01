@@ -11,7 +11,7 @@
 ## Log
 
 ```typescript
-import {CLI} from "@targoninc/ts-logging";
+import {CLI, configureDBLogging, LoggingDb} from "@targoninc/ts-logging";
 
 // You can log to database
 configureDBLogging(db as LoggingDb);
