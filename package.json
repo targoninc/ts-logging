@@ -1,7 +1,7 @@
 {
-  "name": "@org/repo",
+  "name": "@targoninc/ts-logging",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -9,14 +9,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/org/repo.git"
+    "url": "git+https://github.com/targoninc/ts-logging.git"
   },
   "scripts": {
     "build": "bun build ./src/index.ts --outdir ./dist --target bun --format esm && tsc",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "bun run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "uuidv7": "^1.0.2"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "bun-plugin-dtsx": "^0.21.9"
