@@ -80,17 +80,17 @@ export class CLI {
         process.stdout.write(text);
     }
 
-    static trace(toLog: any) {
-        CLI.object(toLog);
+    static trace(toLog: any, config: LogConfig = {}) {
+        CLI.object(toLog, config);
         // @ts-ignore
         const stack = new Error().stack
             .split("\n")
             .slice(2)
             .join("\n");
-        CLI.debug(stack);
+        CLI.debug(stack, config);
     }
 
-    static object(obj: any) {
-        CLI.debug(JSON.stringify(obj, null, 4));
+    static object(obj: any, config: LogConfig = {}) {
+        CLI.debug(JSON.stringify(obj, null, 4), config);
     }
 }
