@@ -1,5 +1,5 @@
-import dns from 'node:dns';
-import os from 'node:os';
+import dns from "node:dns";
+import os from "node:os";
 
 const options = { family: 4 };
 
@@ -12,6 +12,7 @@ dns.lookup(os.hostname(), options, (err: any, addr: string) => {
         ip = addr;
     }
 });
+
 
 export class IP {
     static get(req: any) {

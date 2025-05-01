@@ -13,6 +13,9 @@
 ```typescript
 import {CLI} from "@targoninc/ts-logging";
 
+// You can log to database
+configureDBLogging(db as LoggingDb);
+
 // .debug() by default doesn't log to DB, so you'll have to specifically enable it
 CLI.debug(`This is a test log`, {
     logToDb: true
