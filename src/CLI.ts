@@ -1,8 +1,8 @@
 import {uuidv7} from "uuidv7";
-import {IP} from "./IP.ts";
-import type {LogConfig} from "./defs/LogConfig.ts";
-import {LogLevel} from "./defs/LogLevel.ts";
-import type {LoggingDb} from "./defs/LoggingDb.ts";
+import {IP} from "./IP";
+import type {LogConfig} from "./defs/LogConfig";
+import {LogLevel} from "./defs/LogLevel";
+import type {LoggingDb} from "./defs/LoggingDb";
 
 let dbLoggingConfigured = false;
 let loggingDb: LoggingDb | null = null;
